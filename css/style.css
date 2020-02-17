@@ -174,7 +174,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #fff url("/https://vladimir-skikh.github.io/profpartner/images/work-4.svg") no-repeat center;
+  background: #fff url("https://vladimir-skikh.github.io/profpartner/images/work-4.svg") no-repeat center;
 }
 
 .section-title__advantages {
@@ -641,7 +641,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 50%;
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/phone.svg") no-repeat center;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/phone.svg") no-repeat center;
 }
 
 .header-contacts {
@@ -654,15 +654,15 @@ body {
 }
 
 .header-contacts .instagram::before {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/instagram.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/instagram.svg");
 }
 
 .header-contacts .vk::before {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/vk.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/vk.svg");
 }
 
 .header-contacts .mail::before {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/mail.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/mail.svg");
 }
 
 .header-contact {
@@ -941,7 +941,7 @@ body {
   min-height: 402px;
   width: 65%;
   padding: 2rem 0 0 6.5rem;
-  background: url("/https://vladimir-skikh.github.io/profpartner/images/gruz_box.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/profpartner/images/gruz_box.png") no-repeat center;
   background-size: contain;
 }
 
@@ -1222,29 +1222,29 @@ body {
 }
 
 .services-second-block:first-child {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/gruzchiki.jpg") no-repeat center;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/gruzchiki.jpg") no-repeat center;
   background-size: cover;
 }
 
 .services-second-block:nth-child(2) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/raznorabochie.jpg") no-repeat center;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/raznorabochie.jpg") no-repeat center;
   background-size: cover;
 }
 
 .services-second-block:nth-child(3) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/sborshiki.jpg") no-repeat center;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/sborshiki.jpg") no-repeat center;
   background-size: cover;
 }
 
 .services-second-block:nth-child(4) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/razn-instrumentom.jpg") no-repeat center;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/razn-instrumentom.jpg") no-repeat center;
   background-size: cover;
 }
 
 .services-second-block:last-child {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/gruzoperevozki.jpg") no-repeat center;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/gruzoperevozki.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1302,19 +1302,19 @@ body {
 }
 
 .work-block:nth-child(1) > .work-number::after {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/work-1.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/work-1.svg");
 }
 
 .work-block:nth-child(2) > .work-number::after {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/work-2.jpg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/work-2.jpg");
 }
 
 .work-block:nth-child(3) > .work-number::after {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/work-3.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/work-3.svg");
 }
 
 .work-block:nth-child(4) > .work-number::after {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/work-4.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/work-4.svg");
 }
 
 .work-number {
@@ -1389,32 +1389,32 @@ body {
 }
 
 .whywe-block:first-child {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/whywe-1.jpg") no-repeat top;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/whywe-1.jpg") no-repeat top;
   background-size: contain;
 }
 
 .whywe-block:nth-child(2) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/whywe-2.jpg") no-repeat top;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/whywe-2.jpg") no-repeat top;
   background-size: contain;
 }
 
 .whywe-block:nth-child(3) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/whywe-3.jpg") no-repeat top;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/whywe-3.jpg") no-repeat top;
   background-size: contain;
 }
 
 .whywe-block:nth-child(4) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/whywe-4.jpg") no-repeat top;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/whywe-4.jpg") no-repeat top;
   background-size: contain;
 }
 
 .whywe-block:nth-child(5) {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/whywe-5.jpg") no-repeat top;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/whywe-5.jpg") no-repeat top;
   background-size: contain;
 }
 
 .whywe-block:last-child {
-  background: #D10000 url("/https://vladimir-skikh.github.io/profpartner/images/whywe-6.jpg") no-repeat top;
+  background: #D10000 url("https://vladimir-skikh.github.io/profpartner/images/whywe-6.jpg") no-repeat top;
   background-size: contain;
 }
 
@@ -1689,11 +1689,11 @@ body {
 }
 
 .contacts-link_phone::before {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/contacts-phone.jpg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/contacts-phone.jpg");
 }
 
 .contacts-link_email::before {
-  background-image: url("/https://vladimir-skikh.github.io/profpartner/images/contacts-mail.svg");
+  background-image: url("https://vladimir-skikh.github.io/profpartner/images/contacts-mail.svg");
 }
 
 .contacts-bottom__buttons {
