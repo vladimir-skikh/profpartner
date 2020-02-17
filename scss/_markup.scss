@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  &-services {
+    display: flex;
+    flex-direction: column;
+  }
+  &-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-request {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__partners {
+      justify-content: space-evenly;
+    }
+  }
+  &-vacancy {
+    position: relative;
+  }
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+}
+.section {
+  padding-top: 6rem;
+  padding-bottom: 11rem;
+  min-height: 100vh;
+  &-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 3.3rem;
+    font-weight: 600;
+    &_small {
+      text-align: left;
+      font-size: 3rem;
+    }
+    &__whywe {
+      margin-bottom: 7rem;
+    }
+    &__work {
+      margin-bottom: 6rem;
+    }
+    &__feedback {
+      margin-bottom: 9rem;
+    }
+    &__contacts {
+      margin-bottom: 5rem;
+    }
+    &__about-us {
+      margin-bottom: 8.5rem;
+    }
+    &__questions {
+      margin-bottom: 8rem;
+    }
+    &__vacancy {
+      margin-bottom: 20px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #fff url('/images/work-4.svg') no-repeat center;
+      }
+    }
+    &__advantages {
+      margin-bottom: 8rem;
+    }
+  }
+  &-description {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(#000, 0.8);
+    &_big {
+      text-align: left;
+      font-size: 2.2rem;
+    }
+    &__services-second {
+      margin-bottom: 9rem;
+    }
+    &__vacancy {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10rem;
+    }
+  }
+  &__description {
+    margin-bottom: 6rem;
+  }
+  &-request {
+    min-height: 0;
+    padding-top: 9rem;
+  }
+  &-link {
+    min-height: 0;
+    height: 25rem;
+  }
+  &-work {
+    padding-bottom: 14rem;
+    min-height: 0;
+  }
+  &-feedback {
+    padding: 0;
+    padding-bottom: 9rem;
+    min-height: 0;
+    max-height: 67rem;
+  }
+  &-contacts {
+    min-height: 0;
+    padding: 6rem 0 8rem;
+  }
+  &-questions {
+    height: 100vh;
+  }
+  &-advantages {
+    padding: 3.5rem 0 8rem;
+    min-height: 0;
+    max-height: 30rem;
+  }
+}
+.button {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  height: 5.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    box-shadow: 0 0 10px -2px $dark;
+  }
+  &-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 5rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  &-catalog {
+    width: 45%;
+    background-color: $red;
+    margin-right: 2rem;
+    border: 3px solid $red;
+    transition: all 0.3s;
+    & > a.button-link {
+      color: #fff;
+    }
+    &:hover {
+      transition-delay: 50ms;
+      background-color: rgba(#fff, 0.6);
+      & > a.button-link {
+        color: #000;
+      }
+      box-shadow: 0 0 10px -2px $dark;
+    }
+  }
+  &-phone {
+    width: 45%;
+    background-color: #fff;
+    border: 3px solid $red;
+    transition: all 0.3s;
+    & > a.button-link {
+      color: #000;
+    }
+    &:hover {
+      transition-delay: 50ms;
+      background-color: $red;
+      & > a.button-link {
+        color: #fff;
+      }
+      box-shadow: 0 0 10px -2px $dark;
+    }
+  }
+  &-services {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5.5rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: $red;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($red, 0.7);
+    }
+    &:focus {
+      background-color: rgba($red, 0.7);
+    }
+  }
+  &-about-us {
+    padding: 0;
+    background-color: $red;
+    border: 3px solid $red;
+    width: 26rem;
+    height: 5rem;
+    text-transform: none;
+    transition: all 0.3s;
+    & > a {
+      outline: none;
+      display: block;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 4.6rem;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:focus {
+      transition-delay: 50ms;
+      background-color: rgba(#fff, 0.6);
+      & > a {
+        color: #000;
+      }
+      box-shadow: 0 0 10px -2px $dark;
+    }
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+  }
+  &-feedback {
+    background-color: $red;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 2.5rem;
+    transition: all 0.3s;
+    border: 3px solid $red;
+    &:hover {
+      transition-delay: 50ms;
+      background-color: rgba(#fff, 0.6);
+      color: #000;
+      box-shadow: 0 0 10px -2px $dark;
+    }
+  }
+  &-contacts {
+    padding: 0;
+    background-color: $red;
+    border: 3px solid $red;
+    width: 22rem;
+    height: 5.5rem;
+    text-transform: none;
+    transition: all 0.3s;
+    & > a {
+      outline: none;
+      display: block;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 5.2rem;
+      width: 100%;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:focus {
+      transition-delay: 50ms;
+      background-color: rgba(#fff, 0.6);
+      & > a {
+        color: #000;
+      }
+      box-shadow: 0 0 10px -2px $dark;
+    }
+    &__catalog {
+      width: 33rem;
+    }
+  }
+  &-submit {
+    background-color: $red;
+    height: 4.5rem;
+    padding: 5px 2.5rem;
+    font-size: 1.4rem;
+    text-transform: unset;
+    color: #fff;
+    bottom: 0;
+    position: relative;
+    bottom: -2.5rem;
+    border: 1px solid $red;
+    transition: all 0.3s;
+    outline: none;
+    &:hover {
+      background-color: rgba($red, 0.7);
+      box-shadow: 0 0 10px -2px #000;
+      border-color: rgba($red, 0.7);
+    }
+    &:focus {
+      box-shadow: 0 0 10px -2px #000;
+    }
+  }
+}
+.bold {
+  font-weight: 700;
+}
+.semibold {
+  font-weight: 600;
+}
+.medium {
+  font-weight: 500;
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+  .section {
+    padding-top: 3rem;
+
+    &-request {
+      padding-top: 0;
+      height: 260px;
+    }
+    &-work {
+      padding: 0 0 4rem;
+    }
+    &-title {
+      &__work {
+        margin-bottom: 3rem;
+      }
+      &__contacts {
+        margin-bottom: 3rem;
+      }
+      &__vacancy::after {
+        display: none;
+      }
+    }
+    &-description {
+      margin-bottom: 3rem;
+    }
+    &-whywe {
+      display: none;
+    }
+    &-feedback {
+      display: none;
+    }
+    &-about-us {
+      padding-bottom: unset;
+    }
+    &-services {
+      
+      padding: 0;
+    }
+    &-advantages {
+      max-height: none;
+    }
+  }
+  .wrapper {
+    &-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .button {
+    
+    &-about-us {
+      flex-basis: 40%;
+    }
+    &-submit {
+      bottom: 0;
+    }
+    &-contacts {
+      width: 17rem;
+      &__catalog {
+        width: 33rem;
+      }
+    }
+  }
+  .slick-list {
+    padding: 20px 0 !important;
+  }
+}
+@media screen and (max-width: 346px) {
+  .button {
+    &-phone {
+      .button-link {
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

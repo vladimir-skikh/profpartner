@@ -1,0 +1,83 @@
+.for-partners {
+  &-main {
+    margin-top: 12rem;
+    margin-bottom: 15rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      max-width: 530px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__right {
+      max-width: 75rem;
+    }
+  }
+  &-title {
+    margin: 0;
+    margin-bottom: 3rem;
+    padding: 0;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  &-slogan {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  &-offer {
+    padding: 20px 20px;
+    background-color: $red;
+    border-radius: 10px;
+    &__row:first-child {
+      margin-bottom: 2rem;
+    }
+    &-text {
+      display: block;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 4rem;
+    }
+    &-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+}
+.partners-link-bottom {
+  text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $red;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+      color: rgba($red, 0.5);
+    }
+}
+@media screen and (max-width: 576px) {
+  .for-partners {
+    overflow-x: hidden;
+    &-main {
+      margin-top: 3rem;
+    }
+    &-main__right {
+      display: none;
+    }
+    &-main__left {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+}

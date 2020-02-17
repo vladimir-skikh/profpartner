@@ -1,0 +1,22 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-block {
+    flex-basis: 21%;
+  }
+  &-text {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .advantages-block {
+    flex-basis: 100%;
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -1,0 +1,302 @@
+.header {
+  padding: 5.3rem 0 10rem;
+  &-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__right {
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &-logo {
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    &-link {
+      display: block;
+      margin-right: 12px;
+      height: 45px;
+      padding-right: 13px;
+      border-right: 1px solid #000000;
+      display: flex;
+      align-items: center;
+    }
+    .city {
+      color: $dark;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  } 
+  &-phone {
+    position: relative;
+    color: $dark;
+    text-decoration: none;
+    padding-left: 4rem;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background: $red url('/images/phone.svg') no-repeat center;
+    }
+  }
+  &-contacts {
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    .instagram::before {
+      background-image: url('/images/instagram.svg');
+    }
+    .vk::before {
+      background-image: url('/images/vk.svg');
+    }
+    .mail::before {
+      background-image: url('/images/mail.svg');
+    }
+  }
+  &-contact {
+    position: relative;
+    height: 0;
+    &:hover {
+      cursor: pointer;
+      &::before {
+        opacity: 0.5;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      margin-right: 13px;
+      top: 50%;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $red;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all 0.3s ;
+    }
+  }
+  .header-menu-nav {
+    position: fixed;
+    top: -150px;
+    left: 50%;
+    height: 150px;
+    transform: translateX(-50%);
+    max-width: 1170px;
+    padding: 0 30px;
+    width: calc(100vw - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $red;
+    transition: top 0.3s;
+    border-radius: 0 0 30px 30px;
+  }
+  .header-menu-nav_active {
+    top: 0;
+    transition: top 0.3s;
+  }
+  .hidden {
+    display: none;
+  }
+  .header-menu-list {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header-menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-style: 1.8rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  .header-menu-phone {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 200vw;
+    z-index: 998;
+    transition: left 0.3s;
+    /* transform: translateX(200vw); */
+  }
+  .header-menu-phone-active {
+    /* transform: translateX(0); */
+    left: 0;
+    transition: left 0.3s;
+
+  }
+  .header-menu-phone-list {
+    padding: 50px 30px;
+    margin: 0;
+    list-style: none;
+  }
+  .header-menu-phone__item {
+    margin-bottom: 3rem;
+  }
+  .header-menu-phone-link {
+    text-decoration: none;
+    color: $red;
+    font-style: 1.8rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  .header-menu-button {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $dark;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+    }
+    .header-menu {
+      position: relative;
+      width: 23px;
+      height: 3px;
+      background-color: #fff;
+      &::before, 
+      &::after {
+        transform: rotate(0); 
+        transform-origin: center center;
+        transition: 
+          transform 0.3s,
+          all 0.2s ease 0.3s;
+        position: absolute;
+        content: '';
+        display: block;
+        width: 23px;
+        height: 3px;
+        background-color: #fff;
+      }
+      &::before {
+        top: -7px;
+      }
+      &::after {
+        top: 7px;
+      }
+    }
+  }
+  .header-menu-button_active {
+    .header-menu {
+      background-color: transparent;
+      &::before {
+        transition: 
+          all 0.3s,
+          transform 0.3s ease 0.2s;
+        transform-origin: center center;
+        transform: rotate(45deg);
+        top: 0;
+      }
+      &::after {
+        transition: 
+          all 0.3s,
+          transform 0.3s ease 0.2s;
+        transform-origin: center center;
+        transform: rotate(-45deg);
+        top: 0;
+      }
+    }
+  }
+  &-main {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__right {
+      max-width: 75rem;
+    }
+    &-right {
+      max-height: 365px;
+    }
+  }
+  &-title {
+    font-size: 1.8rem;
+    margin: 0 0 5px;
+    padding: 0;
+  }
+  &-slogan {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 2.5rem;
+    &_partners {
+      padding: 0;
+    }
+  }
+  &-offer {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    &_partners {
+      padding: 15px;
+      font-weight: 500;
+      background-color: $red;
+      color: #fff;
+      border-radius: 7px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    overflow-x: hidden;
+    &-main {
+      margin-top: 3rem;
+    }
+    &-top__right {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-phone,
+    &-contacts {
+      display: none;
+    }
+    &-main__right {
+      display: none;
+    }
+    &-main__left {
+      padding: 0;
+      max-width: 100%;
+    }
+    &-buttons {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 410px){
+  .header-logo .city {
+    display: none;
+  }
+}

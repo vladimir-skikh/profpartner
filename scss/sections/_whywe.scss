@@ -1,0 +1,59 @@
+.whywe {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-block {
+    display: flex;
+    align-items: flex-end;
+    height: 22rem;
+    flex-basis: 40%;
+    border-radius: 15px;
+    margin-bottom: 7rem;
+    &:first-child {
+      background: $red url('/images/whywe-1.jpg') no-repeat top;
+      background-size: contain;
+    }
+    &:nth-child(2) {
+      background: $red url('/images/whywe-2.jpg') no-repeat top;
+      background-size: contain;
+    }
+    &:nth-child(3) {
+      background: $red url('/images/whywe-3.jpg') no-repeat top;
+      background-size: contain;
+    }
+    &:nth-child(4) {
+      background: $red url('/images/whywe-4.jpg') no-repeat top;
+      background-size: contain;
+    }
+    &:nth-child(5) {
+      background: $red url('/images/whywe-5.jpg') no-repeat top;
+      background-size: contain;
+    }
+    &:last-child {
+      background: $red url('/images/whywe-6.jpg') no-repeat top;
+      background-size: contain;
+   }
+  }
+  &-text {
+    font-size: 2.2rem 2rem;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    height: 3rem;
+    padding: 1.5rem;
+    background-color: $red;
+    width: 100%;
+    min-height: 8.5rem;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 576px){
+  
+  .whywe-block {
+    flex-basis: 100%;
+    background-size: cover;
+  }
+  .whywe-text {
+    height: 11rem;
+  }
+}

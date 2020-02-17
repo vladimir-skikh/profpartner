@@ -1,0 +1,61 @@
+.vacancy {
+  display: flex;
+  justify-content: space-between;
+  &-block {
+    flex-basis: 30%;
+    padding: 3rem 2rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background-color: $red;
+  }
+  &-image {
+    margin-bottom: 2.5rem;
+  }
+  &-name {
+    margin: 0;
+    margin-bottom: 13px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #fff;
+  }
+  &-experience {
+    display: block;
+    margin-bottom: 13px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  &-description {
+    margin: 0;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    max-width: 250px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: #fff;
+    border-top: 1px solid #fff;
+  }
+  &-mail {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .vacancy {
+    padding: 10px 0;
+  }
+  .vacancy-block {
+    max-width: 80% !important;
+    margin: 0 20px;
+  }
+}

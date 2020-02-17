@@ -1,0 +1,55 @@
+.services-second {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-block {
+    height: 23rem;
+    box-shadow: inset 10px 0 0 0 $red;
+    /* border-left: 10px solid $red; */
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:first-child {
+      background: $red url('/images/gruzchiki.jpg') no-repeat center;
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background: $red url('/images/raznorabochie.jpg') no-repeat center;
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      background: $red url('/images/sborshiki.jpg') no-repeat center;
+      background-size: cover;
+    }
+    &:nth-child(4) {
+      background: $red url('/images/razn-instrumentom.jpg') no-repeat center;
+      background-size: cover;
+    }
+    &:last-child {
+      flex-basis: 100%;
+      background: $red url('/images/gruzoperevozki.jpg') no-repeat center;
+      background-size: cover;
+
+    }
+    &:not(:last-child) {
+      margin-bottom: 9rem;
+      flex-basis: 45%;
+    }
+  }
+  &-name {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .services-second {
+    &-block:not(:last-child) {
+      flex-basis: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+}

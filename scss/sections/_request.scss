@@ -1,0 +1,46 @@
+.request {
+  &-form {
+    display: flex;
+    max-width: 60%;
+    position: relative;
+    &-label {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0;
+      margin-bottom: 6px;
+    }
+    &-input {
+      width: 20.5rem;
+      height: 4.5rem;
+      margin-right: 2.5rem;
+      padding:  5px 2rem;
+      background: #F0F0F0;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      outline: none;
+      transition: all 0.3s ;
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 10px -5px #000;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .request {
+    &-form {
+      display: flex;
+      flex-direction: column;
+      &-block {
+        margin-bottom: 2rem;
+      }
+      &-input {
+        margin-right: 0;
+      }
+    }
+    &-text {
+      flex-basis: 47%;
+    }
+  }
+}

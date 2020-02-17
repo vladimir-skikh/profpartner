@@ -1,0 +1,86 @@
+.services {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &-block {
+    position: relative;
+    width: 34.5rem;
+    padding: 4rem 2rem 8.5rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+    margin-bottom: 10rem;
+  }
+  &__more-info {
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-name {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  &-description {
+    margin: 0;
+    padding: 0;
+    min-height: 6.5rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 7.5rem;
+  }
+  &-price {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  &-time {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  &-link {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $red;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+      color: rgba($red, 0.5);
+    }
+  }
+}
+.services-link-bottom {
+  text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $red;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+      color: rgba($red, 0.5);
+    }
+}
+@media screen and (max-width: 576px) {
+  .services {
+    padding: 10px 0;
+    &__more-info {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .services-block {
+    max-width: 80% !important;
+    margin: 0 20px;
+  }
+  
+}
